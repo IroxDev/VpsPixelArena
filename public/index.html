@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelWar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>PixelArena</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="canvas-container">
+                <canvas id="pixelCanvas" width="1000" height="600"></canvas>
+            </div>
+            <div class="tools">
+                <div class="color-picker" id="colorPicker">
+                    <div class="color black" id="selectedColor"></div>
+                    <div class="color-menu" id="colorMenu">
+                        <div class="color" data-color="#ff0000">Rouge</div>
+                        <div class="color" data-color="#00ff00">Vert</div>
+                        <div class="color" data-color="#0000ff">Bleu</div>
+                        <div class="color" data-color="#ffff00">Jaune</div>
+                        <div class="color" data-color="#ff7f00">Orange</div>
+                        <div class="color" data-color="#964b00">Marron</div>
+                        <div class="color" data-color="#ff69b4">Rose</div>
+                        <div class="color" data-color="#8a2be2">Violet</div>
+                        <div class="color" data-color="#808080">Gris</div>
+                        <div class="color" data-color="#000000">Noir</div>
+                    </div>
+                </div>
+                <div class="countdown" id="countdown"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Crée avec le ❤️ par Irox</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
